@@ -89,6 +89,7 @@ header {
 }
 
 .contacts-button {
+  font-size: 24px;
   padding: 10px 20px;
   color: white;
   text-decoration: none;
@@ -317,3 +318,4 @@ li {
     max-width: 300px;
   }
 }
+
