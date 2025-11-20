@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Jacques Francois Shadow';
+    src: url('JacquesFrancoisShadow-Regular.eot');
+    src: local('Jacques Francois Shadow'), local('JacquesFrancoisShadow-Regular'),
+        url('JacquesFrancoisShadow-Regular.eot?#iefix') format('embedded-opentype'),
+        url('JacquesFrancoisShadow-Regular.woff2') format('woff2'),
+        url('JacquesFrancoisShadow-Regular.woff') format('woff'),
+        url('JacquesFrancoisShadow-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
