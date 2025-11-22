@@ -59,7 +59,7 @@ header {
 .menu {
   display: flex;
   gap: 70px; /* Расстояние между кнопками */
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .menu-button {
@@ -143,7 +143,7 @@ header {
 }
 .name {
   position: absolute;
-  top: -30px;
+  top: -40px;
   font-size: 60px;
   margin-left: 30px;
   font-family: "Jacques Francois Shadow";
@@ -152,9 +152,11 @@ header {
     0 0 30px rgb(255, 0, 200); /* Многослойное свечение */
 }
 .text {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Тень текста */
   position: relative;
-  font-size: 25px;
+  font-size: 20px;
   margin: 30px;
+  padding-top: 10px;
 }
 .infa {
   display: flex;
@@ -164,7 +166,7 @@ header {
 }
 
 .box {
-  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Тень текста */
   margin-top: 3%;
   width: 100%;
   height: 100%;
@@ -184,26 +186,55 @@ header {
   -webkit-backdrop-filter: blur(3px); /* Для Safari */
 }
 
-ul {
-  padding-left: 20px;
-  list-style-image: url("img/Eclipse.png");
-  margin-top: 25px;
+.lu {
+  padding-left: 10px;
 }
-li {
+.kyb {
+  font-size: 20px;
   margin-bottom: 20px;
+  list-style: none; /* убираем стандартные маркеры */
+  background: url("img/444.svg") no-repeat left center;
+  background-size: 20px 20px; /* задаём размер */
+  padding-left: 30px; /* отступ от текста */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* распределяет элементы по краям */
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.namebox {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.pricebox {
+  font-weight: bold;
+  font-size: 25px;
+  margin-right: 20px;
+  font-family: "Jacques Francois Shadow";
+  color: #fff;
+  text-shadow: 0 0 10px rgb(255, 0, 200), 0 0 20px rgb(255, 0, 200),
+    0 0 30px rgb(255, 0, 200); /* Многослойное свечение */
 }
 
 .price {
   display: flex;
+  justify-content: flex-start; /* выравнивание по левому краю контейнера */
   justify-content: center; /* Центрирует блоки по горизонтали */
   gap: 50px; /* Отступы между блоками */
   padding-top: 20px;
-    /* Размытие фона под элементом */
+  /* Размытие фона под элементом */
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px); /* Для Safari */
 }
 
 .box1 {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Тень текста */
   margin-top: 3%;
   margin-bottom: 5%;
   width: 100%;
@@ -318,4 +349,3 @@ li {
     max-width: 300px;
   }
 }
-
