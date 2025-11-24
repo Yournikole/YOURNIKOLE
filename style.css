@@ -106,18 +106,27 @@ header {
     /* Светлый верх */ rgba(140, 140, 140, 0.055) /* Тёмный низ */
   );
 }
-
+.content {
+  padding-left: 200px;
+  padding-right: 200px;
+}
 .NEWVISION {
+  display: flex;
   padding-top: 2.5%;
   padding-bottom: 6%;
+  justify-content: center;
+}
+.NEW{
+height: 100%;
 }
 
 .container {
-  display: flex;
+  display: block;
+  margin-top: 100px;
+  height: 100%;
   align-items: center; /* вертикальное выравнивание по центру */
-  justify-content: space-between; /* распределяет пространство между элементами */
   border: 0.3px solid white; /* Жирная белая окантовка */
-  border-radius: 40px;
+  border-radius: 20px;
   /* Вертикальный градиент: светлый сверху → тёмный снизу */
   background: linear-gradient(
     to bottom,
@@ -126,33 +135,51 @@ header {
   );
   padding: 1%;
   color: #ffffff;
+  position: relative;
 
   /* Размытие фона под элементом */
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px); /* Для Safari */
-  position: relative; /* важно для позиционирования дочерних элементов */
-  overflow: visible; /* разрешает выход элементов за границы контейнера */
-  padding-top: 0; /* убираем отступ сверху, чтобы картинка могла выйти */
-}
-
-.text-block {
-  flex: 1; /* занимает всё доступное пространство слева */
-  padding-right: 15px; /* отступ между текстом и картинкой */
   padding: 1%;
   color: #ffffff;
 }
 
-.image-block {
-  flex: 0 0 auto; /* не растягивается, размер по содержимому */
-  max-width: 500px; /* максимальная ширина картинки (делает её небольшой) */
-  height: auto;
-  position: relative; /* для контроля позиционирования картинки */
-  top: -150px; /* сдвигает картинку вверх за пределы контейнера */
-  z-index: 1; /* поднимает картинку над другими элементами */
+.text-block {
+  padding: 1%;
+  color: #ffffff;
+}
+.name {
+  position: absolute;
+  top: -55px;
+  font-size: 60px;
+  margin-left: 30px;
+  font-family: "Jacques Francois Shadow";
+  color: #fff;
+  text-shadow: 0 0 10px rgb(255, 0, 200), 0 0 20px rgb(255, 0, 200),
+    0 0 30px rgb(255, 0, 200); /* Многослойное свечение */
+}
+.text {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Тень текста */
+  position: relative;
+  font-size: 20px;
+  margin: 30px;
+  padding-top: 10px;
+  margin-right: 400px;
 }
 
+.image-block {
+  max-width: 700px; /* максимальная ширина картинки (делает её небольшой) */
+  height: auto;
+  position: absolute; /* для контроля позиционирования картинки */
+  
+}
+.ph{
+  width: 110%;
+  top: -565px; /* сдвигает картинку вверх за пределы контейнера */
+  margin-left: 820px; /* сдвигает вправо на 20px */
+}
 img {
-  max-width: 100%; /* картинка не выходит за пределы своего контейнера */
+
   height: auto; /* сохраняет пропорции */
   display: block; /* убирает лишние отступы */
   position: relative;
@@ -201,9 +228,9 @@ body {
 }
 
 .footer {
-  background-color: #2c3e50;
+  background-color: #191919d2;
   color: #ecf0f1;
-  padding: 40px 20px 20px;
+  padding: 20px 20px 20px;
 }
 
 .footer-container {
@@ -213,32 +240,8 @@ body {
   max-width: 1200px;
   margin: 0 auto 40px;
 }
-
-.footer-logo h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.footer-menu ul,
-.footer-contacts,
-.footer-social {
-  list-style: none;
-}
-
-.footer-menu li {
-  margin-bottom: 8px;
-}
-
-.footer-menu a,
-.footer-social a {
-  color: #bdc3c7;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-menu a:hover,
-.footer-social a:hover {
-  color: #3498db;
+.footer-social{
+text-align: center;
 }
 
 .social-icon {
@@ -248,8 +251,8 @@ body {
   text-align: center;
   line-height: 32px;
   border-radius: 50%;
-  background-color: #34495e;
   margin-right: 10px;
+  padding-top: 2%;
 }
 
 .btn-to-top {
@@ -294,3 +297,4 @@ body {
     max-width: 300px;
   }
 }
+
