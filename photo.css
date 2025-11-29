@@ -341,9 +341,3 @@ header {
     max-width: 300px;
   }
 }
-@supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
-  .safari-only {
-    background-color: red;
-  }
-}
-
